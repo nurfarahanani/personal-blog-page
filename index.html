@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hani | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="page-bg"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <span>Nurfarahanani</span>
+      <small>Portfolio</small>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">home</a>
+      <a href="about.html">about me</a>
+      <a href="blog.html">blog</a>
+      <a href="#skills">skills</a>
+      <a href="#" onclick="openContact()">contact</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main class="hero">
+    <p class="small-note">♡ available for internship</p>
+
+    <section class="hero-content">
+      <div class="doodle-box">
+        <p>let's dive in</p>
+        <div class="cat">♡</div>
+      </div>
+
+      <div class="main-title">
+        <span class="year">2026</span>
+        <h1>Visual<br><span>Journey</span></h1>
+        <h2>Hani</h2>
+        <p>
+          Software Development student passionate about creating clean,
+          creative and user-friendly web applications.
+        </p>
+
+        <div class="hero-buttons">
+          <button onclick="openContact()">contact me</button>
+          <a href="blog.html">view my work</a>
+        </div>
+      </div>
+
+      <div class="photo-card">
+        <div class="photo-placeholder">
+          <p>put your image here</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="skills-section" id="skills">
+    <h2>skills</h2>
+    <div class="skills-grid">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>PHP</span>
+      <span>MySQL</span>
+      <span>GitHub</span>
+    </div>
+  </section>
+
+  <div class="contact-popup" id="contactPopup">
+    <div class="popup-card">
+      <button class="close-popup" onclick="closeContact()">×</button>
+      <h2>Contact Me</h2>
+      <p><b>Email:</b> nrfarahananijaafar@gmail.com</p>
+      <p><b>GitHub:</b> github.com/nurfarahanani</p>
+      <p><b>Status:</b> Available for internship</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
