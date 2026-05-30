@@ -386,17 +386,15 @@ body {
     width:100%;
     text-align:center;
 
-    background:#8b6758;
-    color:white;
+    background:#6f4a3e;
+    color:#fff;
 
-    padding:18px 10px;
+    padding:20px;
 
     margin-top:100px;
 
     font-family:"Patrick Hand", cursive;
-    font-size:22px;
-
-    letter-spacing:1px;
+    font-size:20px;
 }
 
 @keyframes pop {
