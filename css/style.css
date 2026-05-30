@@ -41,10 +41,22 @@ body {
   color: #3b241f;
   text-decoration: none;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 12px;
   line-height: 0.9;
   font-size: 23px;
   font-weight: 700;
+}
+
+.brand div{
+  display:flex;
+  flex-direction:column;
+}
+
+.nav-logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
 }
 
 .brand small {
@@ -140,17 +152,54 @@ body {
   font-weight: bold;
 }
 
-.main-title h1 {
-  font-family: "Patrick Hand", cursive;
-  font-size: clamp(90px, 13vw, 180px);
-  line-height: 0.78;
-  font-weight: 400;
-  color: #4b1f1a;
+.main-title h1{
+    font-size:4.5rem;
+    line-height:1.1;
+    color:#3b241f;
+    margin-bottom:15px;
 }
 
 .main-title h1 span {
   display: inline-block;
-  transform: translateX(60px);
+  color: #5b2f27;
+  background: #d7c1b4;
+  padding: 0 8px;
+  border-radius: 0;
+  transform: none;
+}
+
+.hero-desc{
+    max-width:500px;
+    font-size:1.1rem;
+    line-height:1.8;
+    color:#5f514a;
+    margin:20px auto;
+}
+
+.availability{
+    margin-bottom:20px;
+    font-size:1rem;
+}
+
+.main-title h2 {
+  font-size: 55px;
+  letter-spacing: 7px;
+  margin-top: 10px;
+  color: #6f3c2f;
+}
+
+.main-title p {
+  max-width: 520px;
+  margin: 20px auto;
+  font-size: 23px;
+  line-height: 1.2;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
 .main-title h2 {
@@ -175,18 +224,24 @@ body {
 }
 
 .hero-buttons button,
-.hero-buttons a {
-  font-family: "Gaegu", cursive;
-  font-size: 20px;
-  border: 2px solid #3b241f;
-  border-radius: 30px;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: #3b241f;
-  background: #fff9ef;
-  cursor: pointer;
-  box-shadow: 5px 5px 0 #7f5b4d;
-  transition: 0.2s;
+.hero-buttons a{
+    background: #d9e3c4; /* warna hijau navbar */
+    color: #3b241f;
+
+    border: 3px solid #3b241f;
+    border-radius: 50px;
+
+    padding: 14px 35px;
+
+    font-family: inherit;
+    font-size: 20px;
+
+    box-shadow: 6px 6px 0 #8b6758;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
 }
 
 .hero-buttons button:hover,
@@ -200,17 +255,43 @@ body {
   transform: rotate(6deg);
 }
 
-.photo-placeholder {
-  width: 180px;
-  height: 220px;
-  background: #fff9ef;
-  border: 3px solid #3b241f;
-  padding: 12px;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  box-shadow: 12px 12px 0 #cfa995;
-  font-size: 22px;
+
+.photo-placeholder{
+    width:180px;
+    height:220px;
+    overflow:hidden;
+}
+
+.photo-placeholder img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.doodle-frame{
+    width:280px;
+    height:320px;
+
+    padding:18px;
+
+    background:#fff;
+
+    border:4px solid #3b241f;
+
+    border-radius:25px;
+
+    transform:rotate(6deg);
+
+    box-shadow:10px 10px 0 #d7c1b4;
+
+    position:relative;
+}
+
+.doodle-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:12px;
 }
 
 .skills-section {
@@ -257,6 +338,18 @@ body {
   display: flex;
 }
 
+.contact-nav{
+    background:#d8e7c5;
+    padding:10px 20px;
+    border:2px solid #3b241f;
+    border-radius:30px;
+    box-shadow:4px 4px 0 #7f5b4d;
+}
+
+.contact-nav:hover{
+    transform:translateY(-2px);
+}
+
 .popup-card {
   width: min(420px, 90%);
   background: #fff9ef;
@@ -287,6 +380,23 @@ body {
   font-size: 35px;
   cursor: pointer;
   color: #3b241f;
+}
+
+.footer{
+    width:100%;
+    text-align:center;
+
+    background:#8b6758;
+    color:white;
+
+    padding:18px 10px;
+
+    margin-top:100px;
+
+    font-family:"Patrick Hand", cursive;
+    font-size:22px;
+
+    letter-spacing:1px;
 }
 
 @keyframes pop {
