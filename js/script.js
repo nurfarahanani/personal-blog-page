@@ -3,14 +3,15 @@ function toggleMenu() {
   navLinks.classList.toggle("active");
 }
 
+
 function openContact() {
-  const popup = document.getElementById("contactPopup");
-  if (popup) popup.classList.add("active");
+  document.getElementById("contactPopup").classList.add("active");
+  document.getElementById("contactOverlay").classList.add("active");
 }
 
 function closeContact() {
-  const popup = document.getElementById("contactPopup");
-  if (popup) popup.classList.remove("active");
+  document.getElementById("contactPopup").classList.remove("active");
+  document.getElementById("contactOverlay").classList.remove("active");
 }
 
 function showTab(tabId, button) {

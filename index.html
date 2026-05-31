@@ -16,16 +16,16 @@
         <img src="images/bear.png" alt="Logo" class="nav-logo">
 
         <div>
-            <span>Hani</span>
+            <span>Personal Portfolio Hani</span>
         </div>
     </a>
 
     <nav class="nav-links" id="navLinks">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="#" class="contact-nav" onclick="openContact()">Contact Me!</a>
-    </nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="#" class="contact-nav" onclick="openContact()">Contact Me!</a>
+  </nav>
 
     <button class="menu-btn" onclick="toggleMenu()">☰</button>
   </header>
@@ -71,21 +71,55 @@
   </main>
 
 
-  <div class="contact-popup" id="contactPopup">
-    <div class="popup-card">
-      <button class="close-popup" onclick="closeContact()">×</button>
-      <h2>Contact Me</h2>
-      <p><b>Email:</b> nrfarahananijaafar@gmail.com</p>
-      <p><b>GitHub:</b> github.com/nurfarahanani</p>
-      <p><b>Status:</b> Available for internship</p>
-    </div>
+ <!-- CONTACT OVERLAY -->
+<div class="contact-overlay" id="contactOverlay" onclick="closeContact()"></div>
+
+<!-- CONTACT SIDEBAR -->
+<div class="contact-sidebar" id="contactPopup">
+
+  <button class="close-contact" onclick="closeContact()">×</button>
+
+  <h2>Get in Touch</h2>
+
+  <div class="contact-row">
+    <div class="contact-icon">✉</div>
+    <p>nrfarahananijaafar@gmail.com</p>
   </div>
 
-  <script src="js/script.js"></script>
+  <div class="contact-row">
+    <div class="contact-icon">✆</div>
+    <p>+60 19-638 1476</p>
+  </div>
 
-    <footer class="footer">
-        <p>© 2026 Nurfarahanani. All rights reserved.</p>
-    </footer>
+  <div class="contact-row">
+    <div class="contact-icon">⚲</div>
+    <p>Pasir Mas, Kelantan</p>
+  </div>
 
+  <h3>Social Media</h3>
+
+  <div class="contact-socials">
+
+    <a href="https://github.com/nurfarahanani" target="_blank">
+      <img src="images/github.png" alt="GitHub">
+    </a>
+
+    <a href="https://linkedin.com/in/YOUR-LINKEDIN" target="_blank">
+      <img src="images/li.webp" alt="LinkedIn">
+    </a>
+
+    <a href="mailto:nrfarahananijaafar@gmail.com">
+      <img src="images/OIP.webp" alt="Email">
+    </a>
+
+    <a href="files/Nurfarahanani CV.pdf" download>
+      <img src="images/resume.webp" alt="Resume">
+    </a>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
 </body>
-</html>
+ </html>
