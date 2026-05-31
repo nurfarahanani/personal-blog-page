@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="page-bg"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <img src="images/bear.png" alt="Logo" class="nav-logo">
+      <div>
+        <span>Hani</span>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="#" class="contact-nav" onclick="openContact()">Contact Me!</a>
+    </nav>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main class="showcase-page">
+
+    <section class="showcase-header">
+      <p>♡ my learning journey</p>
+      <h1>Portfolio Showcase</h1>
+      <span>
+        Explore my projects and technical skills developed throughout my software development journey.
+      </span>
+    </section>
+
+    <section class="showcase-tabs">
+      <button class="tab-btn active" onclick="showTab('projects', this)">Projects</button>
+      <button class="tab-btn" onclick="showTab('skills', this)">Skills</button>
+    </section>
+
+    <section class="tab-content active" id="projects">
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-card" onclick="openProject('school360')">
+          <img src="images/school.png" alt="School360 Project">
+          <div class="portfolio-info">
+            <h2>School360°</h2>
+            <p>Student Performance Monitoring System</p>
+            <span>CodeIgniter 4 • PHP • MySQL</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" onclick="openProject('ioniq')">
+          <img src="images/ioniq.png" alt="IONIQ Project">
+          <div class="portfolio-info">
+            <h2>IONIQ</h2>
+            <p>Student Productivity Management System</p>
+            <span>CodeIgniter 4 • PHP • MySQL</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" onclick="openProject('medimeal')">
+          <img src="images/medimeal.png" alt="MediMeal Assist Project">
+          <div class="portfolio-info">
+            <h2>MediMeal Assist</h2>
+            <p>Personalized Meal Planning System</p>
+            <span>CodeIgniter 4 • PHP • MySQL</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" onclick="openProject('brain')">
+          <img src="images/brain-tumor.png" alt="Brain Tumor Classification Project">
+          <div class="portfolio-info">
+            <h2>Brain Tumor Classification</h2>
+            <p>MRI Classification Using Deep Learning</p>
+            <span>Python • TensorFlow • Keras</span>
+          </div>
+        </div>
+
+        <div class="portfolio-card" onclick="openProject('parking')">
+          <img src="images/smart-parking.png" alt="Smart Parking Project">
+          <div class="portfolio-info">
+            <h2>Smart Parking Allocation</h2>
+            <p>AI Search Algorithm Project</p>
+            <span>BFS • DFS • A*</span>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="tab-content" id="skills">
+
+        <div class="skills-grid">
+
+        <div class="skill-card">
+        <img src="images/html.png">
+        <h3>HTML</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/css.png">
+        <h3>CSS</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/js.png">
+        <h3>JavaScript</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/php.png">
+        <h3>PHP</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/python.png">
+        <h3>Python</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/ci4.png">
+        <h3>CodeIgniter 4</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/mysql.png">
+        <h3>MySQL</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/fb.png">
+        <h3>Firebase</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/capcut.webp">
+        <h3>Capcut</h3>
+        </div>
+
+        <div class="skill-card">
+        <img src="images/canva.png">
+        <h3>Canva</h3>
+        </div>
+
+        </div>
+
+</section>
+
+  </main>
+
+  <div class="project-popup" id="projectPopup">
+    <div class="project-popup-card">
+      <button class="close-popup" onclick="closeProject()">×</button>
+      <div id="projectDetails"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© 2026 Nurfarahanani. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
