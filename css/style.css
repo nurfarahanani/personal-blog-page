@@ -397,6 +397,87 @@ body {
     font-size:20px;
 }
 
+.about-page {
+  width: 92%;
+  min-height: 70vh;
+  margin: 80px auto 60px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.4fr;
+  gap: 70px;
+  align-items: center;
+  padding: 50px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 4px solid #3b241f;
+  box-shadow: 12px 12px 0 #d7c1b4;
+  display: block;
+}
+
+.about-content {
+  max-width: 850px;
+}
+
+.about-content h1 {
+  font-size: 55px;
+  color: #3b241f;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 22px;
+  line-height: 1.4;
+  color: #4b3832;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+  margin: 15px 0 25px;
+  padding: 10px 22px;
+  background: #d9e3c4;
+  color: #3b241f;
+  border: 2px solid #3b241f;
+  border-radius: 25px;
+  box-shadow: 5px 5px 0 #8b6758;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.download-btn:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 2px 2px 0 #8b6758;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 15px;
+    gap: 35px;
+  }
+
+  .about-image img {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+
 @keyframes pop {
   from {
     transform: scale(0.85);
