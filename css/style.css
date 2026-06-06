@@ -686,8 +686,10 @@ body {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-template-columns: repeat(2, minmax(280px, 520px));
+  gap: 35px;
+  justify-content: center;
+  align-items: stretch;
 }
 
 .portfolio-card {
@@ -712,6 +714,8 @@ body {
   display: block;
   background: #f3e4d6;
 }
+
+
 
 .portfolio-info {
   padding: 22px;
@@ -978,6 +982,12 @@ body {
 
     filter:brightness(0) invert(1);
 }
+.email-icon{
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 @media (max-width: 950px) {
@@ -1134,4 +1144,72 @@ body {
   .contact-info {
     grid-template-columns: 1fr;
   }
+}
+
+/* Simple Animations */
+
+.navbar,
+.main-title,
+.photo-card,
+.about-container,
+.showcase-header,
+.showcase-tabs,
+.portfolio-card,
+.skill-card,
+.contact-container {
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.doodle-box {
+  animation: floatDoodle 3s ease-in-out infinite;
+}
+
+@keyframes floatDoodle {
+  0%, 100% {
+    transform: translateY(0) rotate(-7deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-7deg);
+  }
+}
+
+.doodle-frame {
+  animation: softFloat 3.5s ease-in-out infinite;
+}
+
+@keyframes softFloat {
+  0%, 100% {
+    transform: rotate(6deg) translateY(0);
+  }
+  50% {
+    transform: rotate(6deg) translateY(-10px);
+  }
+}
+
+.hero-buttons a,
+.download-btn,
+.contact-socials-page a {
+  transition: 0.3s ease;
+}
+
+.hero-buttons a:hover,
+.download-btn:hover,
+.contact-socials-page a:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-card:hover,
+.skill-card:hover {
+  transform: translateY(-8px);
 }
